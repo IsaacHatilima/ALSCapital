@@ -43,20 +43,23 @@ def calculator(request):
         context={'loanz' : loanz}
         return render(request, 'calculator.html' , context)
     elif request.method == 'POST':
-        months = 12
-        interest_rate = 1
-        interest = 41 / 1200
-        loan = 5000
-        amount = (float(interest) * -float(loan) * pow((1 + float(interest)), months) / (1 - pow((1 + float(interest)), months)))
+        # months = 12
+        months = request.POST.get('period')
+        loan = request.POST.get('amount')
+        interest_rate = request.POST.get('percentage')
+        # interest_rate = 41
+        interest = int(interest_rate) / 1200
+        # loan = 5000
+        amount = float((float(interest) * -float(loan) * pow((1 + float(interest)), int(months)) / (1 - pow((1 + float(interest)), int(months)))))
         
-        topay = amount * months
+        topay = float(float(amount) * int(months))
         pe = float(interest/100)
-        inter = round(loan*pe/12,2)
-        principal = round(amount - inter,2)
-        balances = round(loan - principal,2)
-        interestz = round(topay - loan,2)
-        bal = round(topay - amount,2)
-        capbal = round(loan - principal,2)
+        # inter = round(loan*pe/12,2)
+        # principal = round(amount - inter,2)
+        # balances = round(loan - principal,2)
+        # interestz = round(topay - loan,2)
+        # bal = round(topay - amount,2)
+        # capbal = round(loan - principal,2)
         # amount = npf.pmt(41, 12, 5000)
         # payback = npf.pmt(0.41/12, 12*2, 5000)
         
