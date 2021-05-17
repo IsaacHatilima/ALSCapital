@@ -23,7 +23,7 @@ class News(models.Model):
 
     public_id = models.UUIDField(unique=True, default=uuid.uuid4, editable=False)
     headline = models.CharField(max_length=550, verbose_name="Headline", null=False)
-    body = models.TextField(max_length=150, verbose_name="Loan Type", null=False)
+    body = models.TextField(verbose_name="Body", null=False)
     new_image = models.ImageField(upload_to='img_uploads/')
     date_created = models.DateField(verbose_name= "Date Created", auto_now=True)
 
