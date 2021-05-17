@@ -138,7 +138,7 @@ STATIC_ROOT = os.path.join('/home/techzm/demos.techtitan.co.zm/static')
 
 MEDIA_URL = '/media/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_ROOT = os.path.join(BASE_DIR, '/home/techzm/demos.techtitan.co.zm/als/media')
+MEDIA_ROOT = os.path.join(BASE_DIR, '/home/techzm/demos.techtitan.co.zm/media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
