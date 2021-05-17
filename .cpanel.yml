@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/techzm/als
+    - export DEPLOYPATH=/home/techzm/alscapital
     - /bin/cp -R * $DEPLOYPATH
