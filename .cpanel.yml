@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/techzm/demos.techtitan.co.zm
+    - export DEPLOYPATH=/home/techzm/capitalapp
     - /bin/cp -R * $DEPLOYPATH
