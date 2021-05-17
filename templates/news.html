@@ -33,7 +33,7 @@
                         <div class="blog-content">
                             <span>{{ news.date_created | safe }}</span>
                             <a href="{{ news.get_absolute_url }}" class="post-title">{{ news.headline | safe }}</a>
-                            <p>{{ news.body | truncatewords:140 | safe }}</p>
+                            <p>{{ news.body | truncatewords:40 | safe }}</p>
                         </div>
                     </div>
                 {% endfor %}
