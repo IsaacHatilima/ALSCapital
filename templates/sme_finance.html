@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url({% static 'img/bg-img/13.jpg' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h2>SME Finance</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                                <li class="breadcrumb-item"><a href="">Loan Products</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">SME Finance </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="post-news-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Post Details Content Area -->
+                <div class="col-12 col-lg-8">
+                    <div class="post-details-content mb-100">
+                        <img src="{% static 'img/als/_BSK3416.jpg' %}" alt="">
+                        <p>We aim to provide comprehensive services to corporates including, but not limited to financial and non-financial elements which seeks to meet our client’s immediate and future growth needs.</p>
+                        
+                        <section class="services-area section-padding-100-0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!-- Section Heading -->
+                                    <div class="section-heading text-center mb-100 wow fadeInUp" data-wow-delay="100ms">
+                                        <div class="line"></div>
+                                        <h2>Features of SME Finance Loans</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <!-- Single Service Area -->
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="200ms">
+                                        <div class="icon">
+                                            <i class="icon-profits"></i>
+                                        </div>
+                                        <div class="text">
+                                            <h5>Cash Loan Facility</h5>
+                                            <p>You get your cash as soon as your loan is approved to make that urgent payment.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single Service Area -->
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="300ms">
+                                        <div class="icon">
+                                            <i class="icon-money-1"></i>
+                                        </div>
+                                        <div class="text">
+                                            <h5>Approved</h5>
+                                            <p>Your loan is processed and approved within 48 hours from submission of a complete application.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single Service Area -->
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="400ms">
+                                        <div class="icon">
+                                            <i class="icon-coin"></i>
+                                        </div>
+                                        <div class="text">
+                                            <h5>Flexible Payback</h5>
+                                            <p>Our payback terms are tailor made to the customers’ cash flow.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single Service Area -->
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="500ms">
+                                        <div class="icon">
+                                            <i class="icon-smartphone-1"></i>
+                                        </div>
+                                        <div class="text">
+                                            <h5>No Hidden Deductions</h5>
+                                            <p>All deductions, where applicable, are properly documented. No deductions will be made that are not well stipulated.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="services-area section-padding-100-0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!-- Section Heading -->
+                                    <div class="section-heading text-center mb-100 wow fadeInUp" data-wow-delay="100ms">
+                                        <div class="line"></div>
+                                        <h2>Eligibility</h2>
+                                        <p>To qualify for this service, one needs to:</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <!-- Single Service Area -->
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="200ms">
+                                        <div class="icon">
+                                            <i class="icon-briefcase-1"></i>
+                                        </div>
+                                        <div class="text">
+                                            <h5>Years of Existence.</h5>
+                                            <p style="color: black;">Your firm or business must have been in existence for at least one (1) year.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Single Service Area -->
+                                <div class="col-12 col-md-6 col-lg-8">
+                                    <div class="single-service-area d-flex mb-100 wow fadeInUp" data-wow-delay="300ms">
+                                        <div class="icon">
+                                            <i class="icon-invoice"></i>
+                                        </div>
+                                        <div class="text">
+                                            <h5>KYC Documentation</h5>
+                                            <ul>
+                                                <li><b>The Business must be </b> duly registered or incorporated at the Patents and Company Registration Agency ("PACRA")</li>
+                                                <li>Must be registered for tax purposes with the Zambia Revenue Authority (“ZRA”). and in possession of a valid Tax Clearance Certificate (“TCC”)</li>
+                                                <li>Details of the collateral or security.</li>
+                                                <li>Bank statements.</li>
+                                                <li>Annual financial statements (audited or unaudited).</li>
+                                                <li>Corporate profile or business plan.</li>
+                                                <li>Cashflow projections.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                        <hr>
+                        <div class="post-a-comment-area mb-100 clearfix">
+                        <a href="calculator" class="btn credit-btn mt-30">Calculator</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Sidebar Widget -->
+                <div class="col-12 col-sm-9 col-md-6 col-lg-4">
+                    <div class="sidebar-area mb-100">
+                        <!-- Single Sidebar Widget -->
+                        <div class="single-widget-area cata-widget">
+                            <div class="widget-heading">
+                                <div class="line"></div>
+                                <h4>Loan Types</h4>
+                            </div>
+
+                            <ul>
+                                <li><a href="{% url 'sme-finance' %}">SME Finance (<span style="font-size: small; color:gray">Current Page</span>)</a> </li>
+                                <li><a href="{% url 'payroll-based' %}">Payroll Based</a></li>
+                                <li><a href="{% url 'retail-based' %}">Retail Based</a></li>
+                                <li><a href="{% url 'consumer-based' %}">Consumer Based</a></li>
+                                <li><a href="{% url 'purchase-order' %}">Purchase Order</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}

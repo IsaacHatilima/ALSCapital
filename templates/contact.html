@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url({% static 'img/bg-img/13.jpg' %});">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb-content">
+                        <h2>Contact</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Breadcrumb Area End ##### -->
+
+    <!-- ##### Contact Area Start ##### -->
+    <section class="contact-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Single Contact Area -->
+                <div class="col-12 col-lg-4">
+                    <div class="single-contact-area mb-100">
+                        <!-- Logo -->
+                        <p>ALS Capital, your number one stop for financial assistance.</p>
+                    </div>
+                </div>
+
+                <!-- Single Contact Area -->
+                <div class="col-12 col-lg-4">
+                    <div class="single-contact-area mb-100">
+                        <div class="contact--area contact-page">
+                            <!-- Contact Content -->
+                            <div class="contact-content">
+                                <h5>Get in touch</h5>
+
+                                <!-- Single Contact Content -->
+                                <div class="single-contact-content d-flex align-items-center">
+                                    <div class="icon">
+                                        <img src="{% static 'img/core-img/location.png' %}" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p>Unit B-3 Nexus Centre 8472 <br> Malambo Rd, Lusaka.</p>
+                                    </div>
+                                </div>
+                                <!-- Single Contact Content -->
+                                <div class="single-contact-content d-flex align-items-center">
+                                    <div class="icon">
+                                        <img src="{% static 'img/core-img/call.png' %}" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p>+260211 244 336/335</p>
+                                        <span>mon-fri , 08.am - 5.pm</span>
+                                    </div>
+                                </div>
+                                <!-- Single Contact Content -->
+                                <div class="single-contact-content d-flex align-items-center">
+                                    <div class="icon">
+                                        <img src="{% static 'img/core-img/message2.png' %}" alt="">
+                                    </div>
+                                    <div class="text">
+                                        <p>info@alscapital.co.zm</p>
+                                        <span>we reply in 24 hrs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ##### Google Maps ##### -->
+        <div class="map-area">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.601713231384!2d28.273177714324582!3d-15.398041917431735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1940f50913ff832b%3A0x958673c0e92a35c1!2sALS%20Capital!5e0!3m2!1sen!2szm!4v1594895210669!5m2!1sen!2szm" allowfullscreen></iframe>
+            <!-- Contact Area 
+            <div class="contact---area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="contact-form-area contact-page">
+                                <h4 class="mb-50">Send a message</h4>
+
+                                <form action="#" method="post" id="cont">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="email" name="email" placeholder="Your E-mail">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Your Subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <textarea name="message" class="form-control" id="message" name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn credit-btn mt-30" type="button" id="sends">Send</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section class="breadcrumb-area bg-img bg-overlay jarallax" style="background-image: url({% static 'img/bg-img/4.jpg' %});">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="breadcrumb-content">
+                    <h2>Purchase Order</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                            <li class="breadcrumb-item"><a href="">Loan Products</a></li>
+                            <li class="breadcrumb-item"><a href="">Micro Loan Facilities</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Purchase Order </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Breadcrumb Area End ##### -->
+
+<!-- ##### Post Details Area Start ##### -->
+<section class="post-news-area section-padding-100-0">
+    <div class="container">
+        <div class="row">
+            <!-- Post Details Content Area -->
+            <div class="col-12 col-lg-8">
+                <div class="post-details-content mb-100">
+                    <img src="{% static 'img/pics/calculator-820330_1280.jpg' %}" alt="">
+                    <p style="color:black;">This is a working capital financial solution in form of short-term funding given to companies or business owners that need to pay their suppliers for the goods they need to purchase or make an order for their clients or customers.</p>
+                    <h4>How it works</h4>
+                    <p style="color:black;">This is a revolving loan facility where you are allowed to make quarterly drawings and respective repayments to meet your working capital needs for financing orders. The facility is subject to annual review and renewal subject to performance. 
+                    The facility comes with competitive interest rate pricing</p>
+                    <p style="color:black;">Benefits of purchase order finance to companies and business owners;</p>
+                    <ul>
+                        <li>Enables the borrower to handle bigger orders beyond their internal working capital. </li>
+                        <li>Enhance customer and supplier relationships.</li>
+                        <li>Improve their order volume.</li>
+                        <li>More profitability for the borrower.</li>
+                    </ul>
+                    <hr>
+                    <div class="post-a-comment-area mb-100 clearfix">
+                    <a href="calculator" class="btn credit-btn mt-30">Calculator</a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Sidebar Widget -->
+            <div class="col-12 col-sm-9 col-md-6 col-lg-4">
+                <div class="sidebar-area mb-100">
+                    <!-- Single Sidebar Widget -->
+                    <div class="single-widget-area cata-widget">
+                        <div class="widget-heading">
+                            <div class="line"></div>
+                            <h4>Loan Types</h4>
+                        </div>
+
+                        <ul>
+                            <li><a href="{% url 'sme-finance' %}">SME Finance</a> </li>
+                            <li><a href="{% url 'payroll-based' %}">Payroll Based </a></li>
+                            <li><a href="{% url 'retail-based' %}">Retail Based</a></li>
+                            <li><a href="{% url 'consumer-based' %}">Consumer Based</a></li>
+                            <li><a href="{% url 'purchase-order' %}">Purchase Order (<span style="font-size: small; color:gray">Current Page</span>)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,209 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Title -->
+    <title>ALS Capital</title>
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/tab_logo.jpg' %}">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+    <link rel="stylesheet" href="{% static 'iziToast/dist/css/iziToast.min.css' %}">
+    <style>
+        ul li {list-style-type: disc;}
+        .liner{text-align : left }
+        .para_style {text-align:justify}
+    </style>
+</head>
+
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 d-flex justify-content-between">
+                        <!-- Logo Area -->
+                        <div class="logo">
+                            <a href="index.html"><img src="{% static 'img/logo2.jpg' %}" alt="" width="250" height="200"></a>
+                        </div>
+
+                        <!-- Top Contact Info -->
+                        <div class="top-contact-info d-flex align-items-center">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Unit B-3 Nexus Centre 8472 Malambo Rd, Lusaka"><i class="fa fa-map-marker fa-2x"> </i> Unit B-3 Nexus Centre 8472 Malambo Rd, Lusaka</a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="info@alscapital.co.zm"><i class="fa fa-envelope fa-2x"> </i> <span>info@alscapital.co.zm</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="credit-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="creditNav">
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="{% url 'home' %}">Home</a></li>
+                                    <li><a href="#">Loan Products</a>
+                                        <ul class="dropdown">
+                                            <li><a href="{% url 'sme-finance' %}">SME Finance</a></li>
+                                            <li><a href="#">Micro Loan Facility</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="{% url 'payroll-based' %}">Payroll Based</a></li>
+                                                    <li><a href="{% url 'retail-based' %}">Retail Based</a></li>
+                                                    <li><a href="{% url 'consumer-based' %}">Consumer Based</a></li>
+                                                    <li style="width:600px"><a href="{% url 'purchase-order' %}">Purchase Order Finance</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{% url 'about' %}">About Us</a></li>
+                                    <li><a href="{% url 'calculator' %}">Calculator</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                    <li><a href="{% url 'news' %}">News</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="contact">
+                            <a href="#"><img src="{% static 'img/core-img/call2.png' %}" alt=""> +260211 244 336/335</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    {% block content %}
+
+
+    {% endblock %}
+
+
+    <footer class="footer-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-footer-widget mb-100">
+                        <h5 class="widget-title">About ALS</h5>
+                        <!-- Nav -->
+                        <nav>
+                            <ul>
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="{% url 'about' %}">About Us</a></li>
+                                <li><a href="{% url 'calculator' %}">Calculator</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-footer-widget mb-100">
+                        <h5 class="widget-title">Our Loans</h5>
+                        <!-- Nav -->
+                        <nav>
+                            <ul>
+                                <li><a href="{% url 'payroll-based' %}">Payroll Based Loans</a></li>
+                                <li><a href="{% url 'retail-based' %}">Retail Based Loans</a></li>
+                                <li><a href="{% url 'consumer-based' %}">Consumer Based Loans</a></li>
+                                <li><a href="{% url 'sme-finance' %}">SME Finance</a></li>
+                                <li><a href="{% url 'purchase-order' %}">Purchase Order Loans</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="single-footer-widget mb-100">
+                        <h5 class="widget-title">Other Links</h5>
+                        <!-- Nav -->
+                        <nav>
+                            <ul>
+                                <li><a href="https://www.mof.gov.zm/" target="_blank">Ministry of Finance</a></li>
+                                <li><a href="https://www.boz.zm/" target="_blank">Currency Standing (BOZ)</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="copywrite-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copywrite-content d-flex flex-wrap justify-content-between align-items-center">
+                            <!-- Footer Logo -->
+                            <a href="{% url 'home' %}" class="footer-logo"><img src="{% static 'img/tab_logo.jpg' %}" alt="" width="100" height="100"></a>
+
+                            <!-- Copywrite Text -->
+                            <p class="copywrite-text">
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Developed by <a href="https://www.techtitan.co.zm" target="_blank">TechTitan</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script></body>
+
+    {% block scrip %}
+
+
+    {% endblock %}
+
+</html>
