@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/techzm/alscapital
+    - export DEPLOYPATH=/home/techzm/django_apps/alscapital
     - /bin/cp -R * $DEPLOYPATH
