@@ -108,6 +108,14 @@
         $('#calc').submit(function(e){
             e.preventDefault();
             $form = $(this)
+            // $("#msg").toggle();
+            var div = document.getElementById('msg');
+            if (div.style.display !== 'none') {
+                div.style.display = 'block';
+            }
+            else {
+                div.style.display = 'block';
+            }
             var formData = new FormData(this);
             $.ajax({
                 url: window.location.pathname,
@@ -115,9 +123,9 @@
                 data: formData,
                 success: function (response) {
                     console.log(response);
-                    
+                    document.getElementById('res').innerHTML = '';
+                    document.getElementById('print').innerHTML = '';
                     $('#res').append('You can get a loan of K'+response.loan+' which will be paid back in '+response.months+' at a monthly installment of K'+response.monthly_installment+' coming to a total of K'+response.topay);
-                    $("#msg").toggle();
                     $('#print').append('<a href="https://www.alscapital.co.zm/printer/print.php?amount='+response.loan+'&percent='+response.interest+'&period='+response.months+'" target="_blank" class="btn credit-btn mt-30">Print</a>');
                 },
                 cache: false,

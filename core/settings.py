@@ -28,7 +28,7 @@ if os.path.isfile(dotenv_file):
 SECRET_KEY = 'django-insecure-@fyflkt81z)u$v_8h1en+!ezdjje53eg1n-&e@*b8%^f&=@x07'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -86,12 +86,12 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'techzm_asl_capital',
-        # 'NAME': 'als_webapp',
-        'USER' : 'techzm_demo',
-        # 'USER' : 'admin',
-        'PASSWORD' : 'jlzn@h4mT^,0',
-        # 'PASSWORD' : 'Password123$$',
+        # 'NAME': 'techzm_asl_capital',
+        'NAME': 'als_webapp',
+        # 'USER' : 'techzm_demo',
+        'USER' : 'admin',
+        # 'PASSWORD' : 'jlzn@h4mT^,0',
+        'PASSWORD' : 'Password123$$',
         'HOST' : 'localhost',
         'PORT' : '3306',
     }
