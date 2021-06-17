@@ -86,12 +86,12 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': 'techzm_asl_capital',
-        'NAME': 'als_webapp',
-        # 'USER' : 'techzm_demo',
-        'USER' : 'admin',
-        # 'PASSWORD' : 'jlzn@h4mT^,0',
-        'PASSWORD' : 'Password123$$',
+        'NAME': 'techzm_asl_capital',
+        # 'NAME': 'als_webapp',
+        'USER' : 'techzm_demo',
+        # 'USER' : 'admin',
+        'PASSWORD' : 'jlzn@h4mT^,0',
+        # 'PASSWORD' : 'Password123$$',
         'HOST' : 'localhost',
         'PORT' : '3306',
     }
